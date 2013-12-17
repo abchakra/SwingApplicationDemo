@@ -1,4 +1,4 @@
-package com.sample.swingapp.editor;
+package com.sample.swingapp.model;
 
 import java.sql.Timestamp;
 import java.text.DateFormat;
@@ -22,8 +22,8 @@ public class StockTableModel extends AbstractTableModel {
 
 	private List<StockBean> stocks = new ArrayList<>();
 
-	public StockTableModel(List<StockBean> stocks) {
-		this.stocks = stocks;
+	public StockTableModel(List<StockBean> stockBeans) {
+		this.stocks = stockBeans;
 	}
 
 	@Override
@@ -62,4 +62,5 @@ public class StockTableModel extends AbstractTableModel {
 	public String getColumnName(int column) {
 		return columnNames[column];
 	}
+
 }

@@ -17,8 +17,8 @@ public class StockCodes {
 	}
 
 	@XmlElement(name = "StockEntry")
-	public void setStockCodeList(List<StockCode> stockCodeList2) {
-		this.stockCodeList = stockCodeList2;
+	public void setStockCodeList(List<StockCode> stockCodeList) {
+		this.stockCodeList = stockCodeList;
 	}
 
 	public String getStockCodeID() {
